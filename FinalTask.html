@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Restaurant</title> 
+    <link rel="stylesheet" href="F-Task.css"> 
+    <script src="Finaltask.js" defer></script> 
+</head> 
+ 
+<body> 
+    <header> 
+        <div class="logo">My Restaurant</div> 
+        <nav> 
+            <ul> 
+                <li><a href="#home">Home</a></li> 
+                <li><a href="#menu">Menu</a></li> 
+                <li><a href="#contact">Contact Us</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+ 
+    <main id="home"> 
+        <section class="carousel"> 
+            <img src="https://static.vecteezy.com/system/resources/previews/021/512/450/non_2x/delicious-food-logo-design-template-cafe-or-restaurant-emblem-chef-with-smiling-lips-formed-from-spoon-and-fork-vector.jpg" alt="Delicious Food" style="width: 200px; height: 150px;"> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRErDYFFxhgNjoUZdvRNNtR-wFYEtFeyugLgA&s" style="width: 200px; height: 150px;"> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsDS6QQRcGA5eSXUuPbLoOFhNkXmUc51zX1A&s" alt="Tasty Dishes" style="width: 200px; height: 150px;"> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6mRszaRzDYr3ysh5cXcgH6LfFLm45_yed_g&s" style="width: 200px; height: 150px;"> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqSf3iekEXwagh_GyGxgrCKKJ2s9ngR1X5MQ&s" style="width: 200px; height: 150px;"> 
+        </section> 
+        <section class="welcome"> 
+            <h1 id="greeting">Welcome to My Restaurant!</h1> 
+        </section> 
+        <section class="description"> 
+            <p>Experience the best food in town with a cozy ambiance and exceptional service. Your taste buds will thank you!</p> 
+        </section> 
+    </main> 
+ 
+    <main id="menu"> 
+        <section class="menu-cards"> 
+            <div class="card"> 
+                <img id="meal1-image" src="https://www.justfood.tv/UserFiles/pasta-3-25-2-2021.jpg" alt="Meal 1" style="width: 200px; height: 150px;"> 
+                <p>Delicious Pasta</p> 
+                <p class="price">$12</p> 
+                <button class="buy" onclick="changeImage('meal1-image', 'https://www.example.com/new-pasta-image.jpg')">Choose</button> 
+            </div> 
+            <div class="card"> 
+                <img id="meal2-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGramyCkUdzynkm1QwcG1OHbSNpDA-hSuyqA&s" alt="Meal 2" style="width: 200px; height: 150px;"> 
+                <p>Grilled Chicken</p> 
+                <p class="price">$15</p> 
+                <button class="buy" onclick="changeImage('meal2-image', 'https://www.example.com/new-chicken-image.jpg')">Choose</button> 
+            </div> 
+
+
+            <div class="card"> 
+                <img id="meal3-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4232rbnE_qKmAceL61chmvY2ZsPs7Yqr7Sw&s" alt="Meal 3" style="width: 200px; height: 150px;"> 
+                <p>Shawemaa</p> 
+                <p class="price">$15</p> 
+                <button class="buy" onclick="changeImage('meal3-image', 'https://www.example.com/new-chicken-image.jpg')">Choose</button> 
+            </div> 
+
+
+            <div class="card"> 
+                <img id="meal4-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToChyu9FO6jqWVF_aS2s8Id9C5frbxLkXADQ&s" alt="Meal 4" style="width: 200px; height: 150px;"> 
+                <p>Maqlobeh</p> 
+                <p class="price">$20</p> 
+                <button class="buy" onclick="changeImage('meal4-image', 'https://www.example.com/new-chicken-image.jpg')">Choose</button> 
+            </div> 
+
+            
+            
+        </section> 
+    </main> 
+ 
+    <main id="contact"> 
+        <section class="contact-info"> 
+            <p>Phone: +123 456 7890</p> 
+            <p>Email: info@myrestaurant.com</p> 
+            <p>Address: 123 Food Street, Tasty City</p> 
+        </section> 
+        <section class="contact-form"> 
+            <form id="form"> 
+                <label for="name">Name:</label> 
+                <input type="text" id="name" required> 
+                <label for="email">Email:</label> 
+                <input type="email" id="email" required> 
+                <label for="message">Message:</label> 
+                <textarea id="message" required></textarea> 
+                <button type="submit">Submit</button> 
+            </form> 
+            <p id="form-message"></p> 
+        </section> 
+    </main> 
+ 
+    <footer> 
+        <div class="footer-content"> 
+            <p>Contact: +123 456 7890 | Location: 123 Food Street, Tasty City</p> 
+            <p>&copy; 2024 My Restaurant. All rights reserved.</p> 
+        </div> 
+    </footer> 
+ 
+    <script> 
+        function changeImage(imageId, newImageSrc) { 
+            const imageElement = document.getElementById(imageId); 
+            imageElement.src =newImageSrc; 
+        } 
+    </script> 
+</body> 
+</html>
