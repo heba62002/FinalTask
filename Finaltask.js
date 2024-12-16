@@ -55,6 +55,9 @@ form.addEventListener('submit', (e) => {
     });
 
     if (valid) {
+        const inputs = document.querySelectorAll('#myForm input');
+
+// Add an event listener to each input field
       
         inputs.forEach(input => {
             input.addEventListener('change', () => {
@@ -71,3 +74,17 @@ form.addEventListener('submit', (e) => {
         formMessage.style.color = 'red';
     }
 });
+
+//....
+// Get all input fields inside the form
+const inputs = document.querySelectorAll('#form input');
+
+// Add an event listener to each input field for the "input" event
+inputs.forEach(input => {
+    input.addEventListener('input', () => {
+        input.value = input.value.toUpperCase(); // Convert text to uppercase
+        input.style.color = 'blue'; // Set text color to blue
+    });
+});
+
+
